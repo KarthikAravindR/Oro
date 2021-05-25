@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oro</title>
+    <link rel="icon" href="/static/images/Logo.png">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/navigation.css">
+    <link rel="stylesheet" href="/static/css/content.css">
+    <link rel="stylesheet" href="/static/css/direction.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3e7b2e5c08.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <header>
+        <div class="header_DrawerToggle" id="drawerToggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <a class="header_logo" href="/" data-link></a>
+        <div class="header_email_button">
+            <p>Logged in as <strong>dev@orocorp.in</strong></p>
+            <button>Log Out</button>
+        </div>
+        <div class="header_partner_button">
+            <button id="allPartners">All Partner</button>
+        </div>
+        <div class="header_SideDrawer" id="sideDrawer">
+            <div class="header_email">
+                <p>Logged in as</p>
+                <p><strong>dev@orocorp.in</strong></p>
+            </div>
+            <nav>
+                <div id="allPartnertwo">All Partners <i class="fas fa-chevron-right"></i></div>
+                <div>Logout <i class="fas fa-chevron-right"></i></div>
+            </nav>
+        </div>
+        <div class="header_Backdrop" id="Backdrop"></div>
+    </header>
+    <main>
+        <div class="main_nav" id="mainNavigation">
+            <div class="main_search">
+                <div class="main_search_icon"><i class="fas fa-search"></i></div>
+                <input type="text" value="" placeholder="Search Partners" />
+            </div>
+            <nav id="navigation">
+                <a href="/partner/OMA00007" class="nav__link" data-link>
+                    <section>
+                        <p>Kannan S</p>
+                        <p>OMA00007 | 9988776655</p>
+                        <p><i class="fas fa-circle green"></i> VISIT OMV00035</p>
+                        <div class="section_arrow"><i class="fas fa-chevron-right"></i></div>
+                    </section>
+                </a>
+                <a href="/partner/OMA00005" class="nav__link" data-link>
+                    <section>
+                        <p>Sivasubramaniyan K</p>
+                        <p>OMA00005 | 9988776655</p>
+                        <p><i class="fas fa-circle green"></i> VISIT OMV00033</p>
+                        <div class="section_arrow"><i class="fas fa-chevron-right"></i></div>
+                    </section>
+                </a>
+                <a href="/partner/OMA00011" class="nav__link" data-link>
+                    <section>
+                        <p>Jayaram S</p>
+                        <p>OMA00011 | 9988776655</p>
+                        <p><i class="fas fa-circle yellow"></i> IDLE</p>
+                        <div class="section_arrow"><i class="fas fa-chevron-right"></i></div>
+                    </section>
+                </a>
+                <a href="/partner/OMA00006" class="nav__link" data-link>
+                    <section>
+                        <p>Saravanan C</p>
+                        <p>OMA00006 | 9988776655</p>
+                        <p><i class="fas fa-circle yellow"></i> IDLE</p>
+                        <div class="section_arrow"><i class="fas fa-chevron-right"></i></div>
+                    </section>
+                </a>
+                <a href="/partner/OMA00028" class="nav__link" data-link>
+                    <section>
+                        <p>Srekesh K</p>
+                        <p>OMA00028 | 9988776655</p>
+                        <p><i class="fas fa-circle red"></i> INACTIVE</p>
+                        <div class="section_arrow"><i class="fas fa-chevron-right"></i></div>
+                    </section>
+                </a>
+            </nav>
+        </div>
+        <div id="app"></div>
+    </main>
+
+    <script type="module" src="/static/js/Routing.js"></script>
+    <script type="module" src="/static/js/index.js"></script>
+    <script type="module" src="/static/js/map.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANEAtQFRDB6Gcu0f-hpYSUEz6iKmuays0&callback=initMap&libraries=&v=weekly"
+        async></script>
+</body>
+
+</html>

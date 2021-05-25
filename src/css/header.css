@@ -1,0 +1,127 @@
+header {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.26);
+    z-index: 10;
+    background-color: white;
+}
+
+.header_logo {
+    width: 80px;
+    height: 35px;
+    background-image: url('../images/Logo.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header_email_button {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.header_partner_button{
+    display: none;
+}
+.header_partner_button button{
+    width: 100px;
+    height: 30px;
+    margin-left: auto;
+    font-size: 0.8rem;
+    color: black;
+    font-weight: bolder;
+    background-color: #FFC351;
+    border-radius: 12px;
+    border: 1px solid #FFC351;
+}
+
+.header_DrawerToggle {
+    width: 35px;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 22px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: none;
+}
+
+.header_DrawerToggle div {
+    width: 90%;
+    height: 3px;
+    margin-top: 7px;
+    background-color: rgb(29, 29, 29);
+}
+.header_SideDrawer.open{
+    width:280px;
+    max-width: 70%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-out;
+    transform: translateX(0);
+    display: block;
+}
+.header_SideDrawer{
+    display: none;
+}
+.header_Backdrop.open{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+}
+.header_Backdrop{
+    display: none;
+}
+.header_email{
+    width: 100%;
+    height: max-content;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+}
+.header_SideDrawer nav div{
+    width: 100%;
+    height: max-content;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header_email_button {
+        display: none;
+    }
+    .header_DrawerToggle{
+        display: block;
+    }
+    .header_partner_button{
+        display: block;
+    }
+}
